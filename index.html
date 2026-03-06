@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서울 2033: 제로 소사이어티</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode"> <div class="game-wrapper">
+        <header class="status-bar">
+            <div class="stat">❤️ <span id="hp">100</span></div>
+            <div class="stat">🧠 <span id="mp">100</span></div>
+            <div class="stat">🎒 <span id="inv-count">0</span></div>
+            <button id="theme-toggle" onclick="toggleTheme()">🌓 테마 변경</button>
+        </header>
+        
+        <main class="game-screen">
+            <div id="text-display" class="typewriter"></div>
+            <div id="choice-container"></div>
+        </main>
+
+        <footer class="controls">
+            <div id="inventory-list">가방: 비어 있음</div>
+            <div class="audio-box">
+                <button id="music-toggle" onclick="toggleMusic()">🎵 BGM: OFF</button>
+            </div>
+        </footer>
+    </div>
+
+    <audio id="bgm" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" type="audio/mpeg">
+    </audio>
+    <script src="game.js"></script>
+</body>
+</html>
